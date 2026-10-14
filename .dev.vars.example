@@ -1,0 +1,9 @@
+# Copy this file to .dev.vars for local development (`.dev.vars` is gitignored).
+# Wrangler loads .dev.vars automatically in `npm run dev`.
+#
+# When you deploy via the "Deploy to Cloudflare" button, you'll be prompted to
+# enter this value instead — so it never has to live in the repo.
+#
+# Use any long random string, e.g.  openssl rand -hex 32
+# The CWS Tracker extension must send this same key (Settings -> Proxy API Key).
+API_KEYS=replace-with-a-long-random-secret

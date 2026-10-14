@@ -1,0 +1,24 @@
+{
+  "name": "cws-tracker-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "cloudflare": {
+    "bindings": {
+      "API_KEYS": {
+        "description": "A secret API key **only you know**. Paste this same key into the CWS Tracker extension (Settings → Proxy API Key). Use a long random string, e.g. `openssl rand -hex 32`."
+      }
+    }
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.16.17",
+    "@cloudflare/workers-types": "^4.20241230.0",
+    "vitest": "^4.1.0",
+    "wrangler": "^4.62.0"
+  }
+}
